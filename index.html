@@ -314,7 +314,7 @@
     fetch('/api/oracle',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:400,system:PROMPT,messages:[{role:'user',content:msg}]})
+      body:JSON.stringify({model:'claude-sonnet-4-5',max_tokens:400,system:PROMPT,messages:[{role:'user',content:msg}]})
     })
     .then(function(r){return r.json();})
     .then(function(d){
